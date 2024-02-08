@@ -42,23 +42,25 @@ h1 {
 	color: #222;
 	}
 	
-	h2 {
-	font-size: 46px;
-	line-height: 54px;
-	color: #222;
-	}
-	
-	h4 {
-	font-size: 20px;
-	color: #222;
-	}
-	
-	h6 {
-	font-weight: 700;
-	font-size: 12px;
-	}
-	
+h2 {
+font-size: 46px;
+line-height: 54px;
+color: #222;
+}
 
+h4 {
+font-size: 20px;
+color: #222;
+}
+
+h6 {
+font-weight: 700;
+font-size: 12px;
+}
+	
+p{
+    padding: 10px;
+}
 .section-p1 {
 	padding: 40px 80px;
 }
@@ -221,9 +223,6 @@ h1 {
 /* SIDEBAR */
 
 
-
-
-
 /* CONTENT */
 #content {
 	position: relative;
@@ -235,6 +234,7 @@ h1 {
 	width: calc(100% - 60px);
 	left: 60px;
 }
+
 /* NAVBAR */
 nav {
 	background: var(--light);
@@ -349,11 +349,6 @@ nav .profile .profile-link a:hover {
 	background: var(--grey);
 }
 /* NAVBAR */
-
-
-
-
-/* MAIN */
 /* CONTENT */
 
 /* productos */
@@ -365,6 +360,7 @@ nav .profile .profile-link a:hover {
 
 #product1{
     text-align: center;
+    justify-content: center;
 }
 
 #product1 .product-container{
@@ -489,18 +485,22 @@ footer{
 /*  Detalles del producto */
 #prodetails{
     display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
 #prodetails .single-pro-image{
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 50px;
 }
 
 #MainImg {
     display: block;
-    width: 100%;
-    height: 600px;
+    width: auto;
+    height: 450px;
     border: 1px solid #ddd;
     padding: 5px;
   }
@@ -518,7 +518,7 @@ footer{
 
   .small-img-col img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     border: 1px solid #ddd;
     padding: 5px;
     cursor: pointer;
@@ -722,7 +722,124 @@ footer{
 		display: none;
 	}
 	nav {
-		width: 50%;
+		width: 100%;
+		background: var(--light);
+		height: 64px;
+		padding: 0 20px;
+		display: flex;
+		align-items: center;
+		grid-gap: 28px;
+		position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 100;
+	}
+	.products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-somos,
+    .valores{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+     h1, h2{
+        font-size: 30px;
+    }
+
+    p{
+        margin: 10px;
+    }
+
+    .valores ul  li a{
+        width: 100%;
+        margin: 5px 0;
+        background-color: transparent;
+    }
+
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+    .small-img-col img {
+        width: 100%;
+        height: 100px;
+        border: 1px solid #ddd;
+        padding: 5px;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+    }
+
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
+
+    .apple h4{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    footer{
+        grid-template-columns: 100%;
+    }
+
+    .footer-text{
+        padding: 1rem 0;
+    }
+
+    .footer-text .links{
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-text h3{
+        text-align: center;
+    }
+
+    /* Cart page */
+    #cart-add{
+        flex-direction: column;
+    }
+
+    #coupon{
+        width: 100%;
+    }
+    #subtotal{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+	#content {
+		position: relative;
+		width: calc(100% - 60px);
+		transition: all .3s ease;
+	}
+	nav .nav-link,
+	nav .divider {
+		display: none;
+	}
+	nav {
+		width: 100%;
 		background: var(--light);
 		height: 64px;
 		padding: 0 20px;
@@ -738,6 +855,7 @@ footer{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 20px;
+        justify-content: center;
         align-items: center;
     }
     .product-container {

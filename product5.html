@@ -6,8 +6,8 @@
 	 <script src="https://kit.fontawesome.com/16d365cb18.js" crossorigin="anonymous"></script>
 	 <link rel="shortcut icon" href="./img/ghost-solid.svg" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
-	<script src="main.js" async></script>
-	<script src="app.js" defer type="module"></script>
+	<script src="/js/main.js" async></script>
+	<script src="/js/app.js" defer type="module"></script>
 	<title> CampusShop </title>
 </head>
 <body>
@@ -16,13 +16,13 @@
 		<a href="#" class="brand"><i class="fa-solid fa-face-smile icon"></i></i> CampusShop </a>
 		<ul class="side-menu">
 			<li>
-				<a href="#" class="active"><i class="fa-solid fa-inbox icon"></i> Todos los productos <i class="fa-solid fa-angle-right  icon-right"></i></a> 
+				<a href="#" class="active"><i class="fa-solid fa-inbox icon"></i> Categorias <i class="fa-solid fa-angle-right  icon-right"></i></a> 
 				<ul class="side-dropdown">
-					<li><a href="#">Abrigos</a></li>
-					<li><a href="#"> Camisas </a></li>
-					<li><a href="#"> Pantalones </a></li>
-					<li><a href="#"> Zapatos </a></li>
-					<li><a href="#"> Perfumes </a></li>
+					<li><a href="/index.html"> Todos los productos</a></li>
+					<li><a href="/abrigos.html">Abrigos</a></li>
+					<li><a href="/camisas.html"> Camisas </a></li>
+					<li><a href="/pantalones.html"> Pantalones </a></li>
+
 				</ul>
 			</li>
 			<li class="divider" data-text="Carrito">Carrito</li>
@@ -57,24 +57,24 @@
 		<!-- product Details -->
         <section id="prodetails" class="section-p1">
             <div class="single-pro-image">
-                <img src="./img/abrigo2.avif" width="100%" id="MainImg" alt="">
+                <img src="./img/abrigo5.avif" width="100%" id="MainImg" alt="">
     
                 <div class="smalli-img-group">
                     <div class="small-img-col">
                         <a href="#MainImg">
-                            <img src="./img/abrigo2.avif"  width="100%" class="small-img" alt="Miniatura 1">
+                            <img src="./img/abrigo5.avif"  width="100%" class="small-img" alt="Miniatura 1">
                         </a>
                     </div>
     
                     <div class="small-img-col">
                         <a href="#MainImg">
-                            <img src="./img/abrigo2.1.avif"  width="100%" class="small-img" alt="Miniatura 1">
+                            <img src="./img/abrigo5.1.avif"  width="100%" class="small-img" alt="Miniatura 1">
                         </a>
                     </div>
     
                     <div class="small-img-col">
                         <a href="#MainImg">
-                            <img src="./img/abrigo2.2.avif"  width="100%" class="small-img" alt="Miniatura 2">
+                            <img src="./img/abrigo5.2.avif"  width="100%" class="small-img" alt="Miniatura 2">
                         </a>
                     </div>
                 </div>
@@ -95,22 +95,37 @@
                 <button class="normal" > Add To Cart </button>
                 <h4> Descripción </h4>
                 <span>Abrigo Merkabá para hombre 5075</span>
-            </div>
+				<h4> Detalles del producto</h4>
+				<p>Marca: MERKABÁ</p>
+				<p>Sexo: Masculino </p>
+				<p> Impermeable: No</p>
+				<p>Nivel de calentamiento: Alto.</p>
+				<p>Material: Lana</p>
+			</div>
         </section >
     
-        <section class="section-p1 ">
-            <h4> Detalles del producto</h4>
-            <p>Marca: MERKABÁ</p>
-            <p>Sexo: Femenino </p>
-            <p> Impermeable: No</p>
-            <p>Nivel de calentamiento: Alto.</p>
-            <p>Material: Lana</p>
-
-
-        </section>
 	<!-- Product Details -->
 
 	<!-- NAVBAR -->
+	<script>
+        var MainImg = document.getElementById('MainImg');
+        var smallImg = document.getElementsByClassName('small-img');
 
+        smallImg[0].onclick = function(){
+            MainImg.src = smallImg[0].src;
+        }
+
+        smallImg[1].onclick = function(){
+            MainImg.src = smallImg[1].src;
+        }
+
+        smallImg[2].onclick = function(){
+            MainImg.src = smallImg[2].src;
+        }
+
+        smallImg[3].onclick = function(){
+            MainImg.src = smallImg[3].src;
+        }
+    </script>
 </body>
 </html>
