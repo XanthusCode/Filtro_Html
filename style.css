@@ -503,6 +503,7 @@ footer{
     height: 450px;
     border: 1px solid #ddd;
     padding: 5px;
+    transition: all 0.3s;
   }
 
   .smalli-img-group {
