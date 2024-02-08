@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="./img/ghost-solid.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/16d365cb18.js" crossorigin="anonymous"></script>
+    <title> Compras </title>
+</head>
+<body>
+    <section id="content">
+		<!-- NAVBAR -->
+		<nav>
+            <i class="fa-solid fa-bars  toggle-sidebar"></i>
+			<form action="#">
+				
+			</form>
+			
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"  width="100%">
+				<ul class="profile-link">
+					<li><a href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+					<li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+					<li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+    </section>
+
+    <!-- products -->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td> Image </td>
+                    <td> Product </td>
+                    <td> Price </td>
+                    <td> Quantity </td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> <a href="#"> <i class="fa-regular fa-circle-xmark"></i> </a> </td>
+                    <td> <img src="./img/abrigo5.avif" alt="abrigo 5"> </td>
+                    <td> Abrigo Merkabá para hombre 5075 </td>
+                    <td> $150.000 </td>
+                    <td> <input type="number" step="1" min="1" max="3" > </td>
+                    <td> $150.000 </td>
+                </tr>
+
+                <tr>
+                    <td> <a href="#"> <i class="fa-regular fa-circle-xmark"></i> </a> </td>
+                    <td> <img src="img/camisa4.avif" alt="camisa 4"> </td>
+                    <td>  Camisa casual Polo Ralph  </td>
+                    <td> $40.000 </td>
+                    <td> <input type="number" step="1" min="1" max="3" > </td>
+                    <td> $40.000 </td>
+                </tr>
+
+                <tr>
+                    <td> <a href="#"> <i class="fa-regular fa-circle-xmark"></i> </a> </td>
+                    <td> <img src="img/zap1.1.avif" alt="zap 1"> </td>
+                    <td> Tenis Nike Court Vision de hombre  </td>
+                    <td> $100.000 </td>
+                    <td> <input type="number" step="1" min="1" max="3" > </td>
+                    <td> $100.000 </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1" >
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td> $290.000</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong> Total </strong></td>
+                    <td><strong> $290.000 </strong></td>
+                </tr>
+            </table>
+            <button class="normal"> Proceed to Checkout</button>
+        </div>
+    </section>
+
+
+     <!-- Footer -->
+     <footer id="somos">
+        <div class="footer-text">
+            <h3>Preguntas & Ordenes</h3>
+            <a href=""> Chatea al whatsapp 123456789</a>
+            <a href=""> Lunes a Sabado </a>
+            <a href=""> 10:00am - 6:30pm </a>
+            <a href="">No se atienden domingos ni festivos el CHAT</a>
+        </div>
+
+        <div class="footer-text">
+            <h3>Terminos y condiciones</h3>
+            <a href=""> Terminos y Condiciones </a>
+            <a href=""> Politica de tratamiento de información </a>
+            <a href=""> politica de Cambio </a>
+            <a href=""> Devoluciones y garantia </a>
+            <a href=""> Promociones Vigentes </a>
+            <a href=""> Terminos del servivcio</a>
+            <a href=""> Política de reembolso </a>
+        </div>
+
+        <div class="footer-text">
+            <h3>información de pedidos</h3>
+            <a href=""> ¿Cómo se paga el pedido? </a>
+            <a href=""> ¿Cuánto se demora el pedido? </a>
+            <a href=""> ¿Cómo hacer un cambio? </a>
+        </div>
+
+        <div class="footer-text">
+            <h3>información de Interes</h3>
+            <a href=""> ¿Quienes somos? </a>
+            <a href=""> Trabaja con nosotros </a>
+        </div>
+
+        <div class="footer-text">
+            <div class="links">
+                <h3>Contact Us</h3>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
